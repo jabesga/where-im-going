@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title>Index</title>
+    </head>
+    <body>
+        {% if owner == True %}
+        <h1>MY PROFILE</h1>
+            <p>{{ user_info.username }}</p>
+            <p>{{ user_info.email }}</p>
+            <h2>PEOPLE FOLLOWING</h2>
+            {% for people in people_following %}
+                <p></p><a href="/user/{{people.username}}">{{people.username}}</a><p>
+            {% endfor %}
+        {% else %}
+            <h1>{{ user_info.username}}'s PROFILE</h1>
+            <p>{{ user_info.username }}</p>
+            <h3><a href="/user/{{user_info.username}}/follow/">SEGUIR A ESTE USUARIO</a></h3>
+        {% endif %}
+        
+        <h2>EVENTOS A LOS QUE VOY</h2>
+        {% for event in events %}
+            <p><a href="/event/{{event.id}}">{{ event.name }}</a></p>
+        {% empty %}
+        <p>Aun no voy a ninguno</p>
+        {% endfor %}
+    </body>
+</html>

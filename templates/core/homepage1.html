@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+    <head>
+        <title>Home &bull; Hackaday.io</title>
+        <!-- Responsive -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        
+        <link rel="stylesheet" href="//cdn.hackaday.io/css/style.css?version=0.52.17" />
+        
+        <script type="text/javascript" src="//use.typekit.net/ymb0lgk.js"></script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    </head>
+    
+    <body class="index homepage">
+        <div class="page-basic-info-static guest-message-signup home-splash">
+    
+            <div class="page-basic-info-static-gradient"></div>
+    
+            <div class="page-basic-info-static-content">
+    
+                <div class="header" id="header">
+                    <div class="container">
+    
+                        <ul class="nav nav-signin" role="navigation">
+                            <li><a href="/signin?returnUrl=%2F" class="grey-white-button">Log In</a></li>
+                        </ul>
+    
+                    </div>
+                </div>
+    
+                <div id="topMessage" class="alert hidden"><span class="j-top-content"></span><a href="javascript:void(0);" class="alert-close j-top-message-close">Close</a></div>
+    
+                <div class="container">
+                    <div class="info-static-content">
+                        <h1 class="just-logo">
+                            Hack a Day
+                        </h1>
+                        <div class="page-basic-info-static-message">
+                            <h2>Discover. Get inspired. Repeat.</h2>
+                            <h3 class="page-basic-info-text">Hackaday.io is a platform for people who like to build things.</h3>
+                        </div>
+    
+                        <div class="form-holder">
+                            <form method="POST" action="/signup">
+                                <input type="hidden" name="_csrf" value="aWoT4crG-d3TEiRlXLKcq_TexsumUoI06NoM" />
+                                <label><input type="text" class="input-field input-email" placeholder="Your email address"  name="email"  /></label>
+                                <label><input type="password" class="input-field input-password" placeholder="Password"  name="password" /></label>
+                                <button id="join-button" class="black-black-button signup" type="submit">Join Hackaday.io</button>
+                                <input class="input-field" placeholder="Invitation Code" required name="invitation_code" value="5Ad0ix2-b96J" type="hidden" />
+                            </form>
+    
+                            <div class="separator">- or -</div>
+    
+                            <a href="/auth/github" class="sign-in-with-github-button button j-dialog-auth-window">
+                                <i class="h-icon-github"></i>
+                                Sign up with Github
+                            </a>
+                            <a href="/auth/twitter" class="sign-in-with-twitter-button button j-dialog-auth-window">
+                                <i class="h-icon-twitter"></i>
+                                Sign up with Twitter
+                            </a>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+    
+            <span class="content-arrow" id="home-scroll-to">&#8675;</span>
+    
+        </div>
+        
+                <div id="footer" class="footer">
+                <a href="#header" class="back-to-top" onClick="CT(this, 'Footer', 'GoingUp');"><i class="icon-longarrowup"></i> Going up?</a>
+                <p><a href="http://hackaday.com/about/">About Us</a> <a href="mailto:projects-contact@hackaday.com">Contact Hackaday.io</a> <a href="/project/37">Give Feedback</a> <a href="/tos">Terms of Use</a> <a href="/privacy-policy">Privacy Policy</a></p>
+                <p><a href="/"  onClick="CT(this, 'Footer', 'Home' ); return false;"><i class="icon-skull"></i> &copy; 2015 Hackaday</a></p>
+        </div>
+        <script>
+            var csrftoken = '3BK5ep1T-Ct7Q3_4roWuioSX39MhpC09C0sM';
+        </script>
+        <script src="//cdn.hackaday.io/build/h%2FydgsYIeDTf7pqgYQEKK8Ngblw0IkZCDqfJ9S2tk7zsBoxIHt5iOd49Qp%2BF4vdxEuRj%2BGpGDLbX4aGOQGmbjaOxUZvklg4ReFk68R95OQshFrGKebvogKGQOiB5Hi1xym9KC54c9Ps0WpzuNydLk4B%2FbKi91KhV40Uxhl38XXb1IVAxAI8iW%2BoQUPCFkHVWZxD0B%2BMZ%2BuEXJTlWuBmopNMxTHRK5yleITPZODT6evZCd0Dj5eHSiGGFx0ECNzAlhyAsPZ6ShycuwBSDJdhsme%2BWAkbFpleNDfUnmEHTcVs%3D-0.52.17.js"></script>
+        
+        <script>
+            $(document).ready( function () {
+        
+                resizeSplash();
+        
+                $(window).resize( function () {
+                    resizeSplash();
+                });
+        
+                function resizeSplash () {
+                    if ($(window).height() >= 700) {
+                        $('.home-splash').css({
+                            'height': $(window).height() - 30
+                        });
+                    }
+                }
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+
+    <title>Homepage</title>
+    <style>
+      html, body{
+        height: 100%;
+      }
+      *{
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0; /* Sin margenes */
+        font-family: "Proxima Nova","Proxima-Nova",Helvetica Neue,Helvetica,Arial,sans-serif;
+        font-size: 16px; /* Tamanio de fuente 16 pixeles */
+        color: #6b6b6b;
+        background: #111;
+        line-height: 1.4;
+        font-weight: 300; 
+      }
+      .home-splash-page{
+        background: url("https://cdn.hackaday.io/img/home-bg-02.jpg") no-repeat;
+        background-size: cover;
+        background-position: center center;
+        text-align: center;
+        width: 100%;
+        padding: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 30px;
+        margin-bottom: 0;
+      }
+      .home-splash-page-gradient{
+        position: absolute;
+        width: 100%;
+        background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0,0,0,0.7)), color-stop(100%, rgba(0,0,0,0)));
+        background-image: -webkit-linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0));
+        background-image: -moz-linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0));
+        background-image: -o-linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0));
+        background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0));
+        min-height: 481px;
+      }
+      .home-splash-page-content{
+        width: 100%;
+        position: absolute;
+      }
+      .logo{
+        display: inline-block;
+        width: 60px;
+        height: 55px;
+        text-indent: -50em;
+        overflow: hidden;
+        white-space: nowrap;
+        color: transparent;
+        background: url("https://cdn.hackaday.io/img/logo-gold.png") top left no-repeat;
+      }
+      h2 {
+        text-align: center;
+        margin: 0;
+        color: #fff;
+        font-size: 54px;
+      }
+    </style>
+  </head>
+  
+  <body style="padding-top: 0px;">
+    <div class="home-splash-page" style="height: 100%; position: relative;">
+      <div class="home-splash-page-gradient"></div>
+      <div class="home-splash-page-content">
+        <div class="container" style="margin-top:10%">
+          <h1 class="logo"></h1>
+          <div class="message">
+            <h2>Discover. Get inspired. Repeat.</h2>
+            <h3 class="page-basic-info-text">Hackaday.io is a platform for people who like to build things.</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title>Index</title>
+    </head>
+    <body>
+        <h1>CREATE EVENT</h1>
+            <form action="/create-event/" method="post">
+                {% csrf_token %}
+                {{ event_form }}
+                <input type="submit" value="Submit" />
+            </form>
+        <h2>Options</h2>
+        <p><a href="/create-event">Create event</a></p>
+        <p><a href="">My profile</a></p>
+    </body>
+</html>
+
